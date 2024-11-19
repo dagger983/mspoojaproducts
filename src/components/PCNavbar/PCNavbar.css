@@ -1,0 +1,20 @@
+.pcnavbar img{
+    height:150px;
+}
+.pcnavbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding:30px;
+    height:100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pcnavbar div{
+    display: flex;
+}
+.pcnavbar p{
+    margin-right:40px;
+    margin-top:50px;
+    font-size:20px;
+    cursor: pointer;
+}

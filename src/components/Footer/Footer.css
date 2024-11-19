@@ -1,0 +1,123 @@
+/* General Footer Styles */
+.footer {
+  background-color: #f0f0f0;
+  padding: 0px;
+  border-top: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Container to align sections */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap; 
+ 
+}
+
+.footer-section {
+  flex: 1;
+  height: 300px;
+  padding: 30px;
+  background-color: rgb(180, 179, 179);
+  box-sizing: border-box; 
+  position: relative;
+  bottom:10px;
+}
+
+.footer-section2 {
+  flex: 1;
+  height: 300px;
+  padding: 30px;
+  margin: 10px;
+  position: relative;
+  bottom:20px;
+  box-sizing: border-box;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.footer-text {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Social Links */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  position: relative;
+  bottom:20px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .footer-section,
+  .footer-section2 {
+    flex: unset;
+    width: 100%; /* Full-width sections for smaller screens */
+    height: auto; /* Auto height for content-based sizing */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 0; /* Reduce padding on smaller screens */
+  }
+
+  .footer-title {
+    font-size: 14px; /* Smaller title font size */
+  }
+
+  .footer-text {
+    font-size: 12px; /* Smaller text font size */
+  }
+
+  .footer-socials {
+    flex-direction: column; /* Stack social links vertically */
+    gap: 5px;
+  }
+
+  .footer-bottom {
+    font-size: 12px; /* Reduce footer text size */
+  }
+}
+
+
+.footer-section2 img{
+    height:200px;
+}
